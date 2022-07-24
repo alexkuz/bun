@@ -1,3 +1,5 @@
+import функция, { переменная } from './unicode-identifiers-export';
+
 var ε = 1e-6,
   ε2 = ε * ε,
   π = Math.PI,
@@ -11,5 +13,7 @@ export { d3_radians };
 
 export function test() {
   console.assert(ε === 1e-6);
+  console.assert(переменная === 'значение переменной');
+  console.assert(функция() === переменная);
   return testDone(import.meta.url);
 }
